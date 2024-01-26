@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  camerashop:
+    build:
+      context: .
+    container_name: camerashop
+    ports:
+      - "3002:3000"
+    restart: unless-stopped
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
