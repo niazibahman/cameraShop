@@ -3,14 +3,21 @@ import data from "../data/cameraBrand.json";
 
 export default function Home(){
     return(
-        <>
-            <img src="/svg/menu.svg" alt="" className="absolute top-4 right-4 w-8 h-8 lg:hidden"/>
-            <hr className="border-primery h-2 absolute top-2/3 inset-x-0"/>
-            <div className="absolute top-2/3 mt-10 inset-x-0">
+        <div className="w-full lg:container h-full lg:overflow-y-hidden px-4 flex-grow">
+            <img src="/svg/menu.svg" alt="" className="absolute top-3 right-4 w-5 h-5 lg:hidden"/>
+            <div className="w-full max-w-7xl bg-red-200 bg-opacity-20 h-full mx-auto relative flex-grow">
+                <Footer/>
+            </div>
+        </div>
+    );
+}
+
+            {/* <hr className="border-primery h-2 absolute top-1/4 inset-x-0"/>
+            <div className="absolute top-[27%] mt-10 inset-x-0">
                 <img src="/svg/fence.svg" alt="" className="w-full object-cover h-16 lg:h-24"/>
             </div>
             <div className="text-primery relative w-full lg:container h-full">
-                <img src="/image/canon_watermark.png" alt="" className="w-full absolute top-20"/>
+                <img src="/image/canon_watermark.png" alt="" className="w-full absolute top-8"/>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-24 lg:mt-32">
                     <div className="col-span-1 z-10 flex flex-col items-center justify-center">
                         <img src="/image/cannon-eos-r5.png" alt="" className="w-9/12 lg:w-full"/>
@@ -53,9 +60,6 @@ export default function Home(){
                         {
                             data.map((item,index)=><li key={index}>{item.name}</li>)
                         }
-                    </ul> */}
+                    </ul> }
                 <Footer/>
-            </div>
-        </>
-    );
-}
+            </div> */}
